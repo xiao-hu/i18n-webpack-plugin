@@ -19,7 +19,6 @@
     "prebuild": "npm run clean",
     "prepublish": "npm run build",
     "release": "standard-version",
-    "security": "nsp check",
     "serve:dev": "nodemon $2 --exec babel-node",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -30,23 +29,23 @@
     "webpack-defaults": "webpack-defaults"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.0",
-    "babel-jest": "^19.0.0",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-polyfill": "^6.23.0",
-    "babel-preset-env": "^1.5.1",
-    "cross-env": "^5.0.1",
-    "del-cli": "^1.0.0",
-    "eslint": "^3.19.0",
-    "eslint-config-webpack": "^1.2.1",
-    "eslint-plugin-import": "^2.2.0",
-    "jest": "^19.0.2",
-    "lint-staged": "^3.6.0",
-    "nsp": "^2.6.3",
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "babel-jest": "^24.9.0",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^6.0.3",
+    "del-cli": "^3.0.0",
+    "eslint": "^6.6.0",
+    "eslint-config-webpack": "^1.2.5",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^25.0.0",
+    "lint-staged": "^9.4.2",
     "pre-commit": "^1.2.2",
-    "standard-version": "^4.0.0",
-    "webpack": "^4.0.0",
-    "webpack-defaults": "^1.4.0"
+    "standard-version": "^7.0.0",
+    "webpack": "^4.41.2",
+    "webpack-defaults": "^4.0.0"
   },
   "peerDependencies": {
     "webpack": "^4.0.0"
@@ -68,5 +67,6 @@
       "eslint --fix",
       "git add"
     ]
-  }
+  },
+  "dependencies": {}
 }
