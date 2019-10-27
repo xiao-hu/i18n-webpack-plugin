@@ -1,7 +1,7 @@
 {
-  "name": "i18n-webpack-plugin",
-  "version": "1.0.0",
-  "author": "Tobias Koppers @sokra",
+  "name": "plugin-i18n-wp4",
+  "version": "1.1.0",
+  "author": "Xiaohu Xie @xxie",
   "description": "Embed localization into your bundle",
   "main": "dist/cjs.js",
   "files": [
@@ -17,7 +17,7 @@
     "lint": "eslint --cache src test",
     "lint-staged": "lint-staged",
     "prebuild": "npm run clean",
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "release": "standard-version",
     "serve:dev": "nodemon $2 --exec babel-node",
     "test": "jest",
