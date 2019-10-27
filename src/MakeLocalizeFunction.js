@@ -30,9 +30,7 @@ function byString(localization, nestedKey) {
   const keys = nestedKey.replace(/^\./, '').split('.');
 
   // loop through the keys to find the nested value
-  for (let i = 0, length = keys.length; i < length; ++i) {
-    const key = keys[i];
-
+  for (const key of keys) {
     if (!(key in localization)) { return; }
 
     localization = localization[key];

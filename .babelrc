@@ -1,22 +1,17 @@
 {
   "presets": [
     [
-      "env",
+      "@babel/preset-env",
       {
-        "useBuiltIns": true,
         "targets": {
-          "node": "4.3"
-        },
-        "exclude": [
-          "transform-async-to-generator",
-          "transform-regenerator"
-        ]
+          "node": true
+        }
       }
     ]
   ],
   "plugins": [
     [
-      "transform-object-rest-spread",
+      "@babel/plugin-proposal-object-rest-spread",
       {
         "useBuiltIns": true
       }
@@ -25,10 +20,10 @@
   "env": {
     "test": {
       "presets": [
-        "env"
+        "@babel/preset-env"
       ],
       "plugins": [
-        "transform-object-rest-spread"
+        "@babel/plugin-proposal-object-rest-spread"
       ]
     }
   }
